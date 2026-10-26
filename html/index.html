@@ -28,6 +28,7 @@
         </aside>
         <main class="c">
             <h1>Franz_Kafka</h1>
+            <section>
             <h2 id="biografia">Biografia</h2>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0wdRk6NIFdgb6GY14s5zuIJN2LCL8kgRMZ64DXNiofQ&s=10" alt="Franz Kafka" class="imagen-main">
             <p>
@@ -60,6 +61,8 @@
                 su trabajo literario. Kafka falleció el 3 de junio de 1924, a los 40 años, dejando una obra que con el
                 tiempo se convirtió en una de las más importantes de la literatura universal.
             </p>
+         </section>
+         <section>
             <h2 id="Obras">Obras</h2>
             <p>Franz Kafka escribió novelas y relatos que se volvieron muy importantes en la literatura universal.
                 Sus obras suelen tratar temas como la angustia, la burocracia, la soledad y los conflictos familiares.
@@ -69,6 +72,8 @@
                 Muchas de sus obras fueron publicadas después de su muerte gracias a su amigo Max Brod,
                 quien decidió conservar y publicar sus manuscritos.
             </p>
+         </section>
+         <section>
             <h2 id="personalidad">Personalidad</h2>
             <p>Franz Kafka era una persona tímida e insegura en sus relaciones sociales, aunque quienes lo conocían
                 destacaban su inteligencia, su sentido del humor y su forma tranquila de comportarse. Sus amigos lo
@@ -88,6 +93,8 @@
                 personales y emocionales, su forma de pensar y su visión de la vida influyeron profundamente en su obra
                 literaria, convirtiéndolo en uno de los escritores más importantes del siglo XX.
             </p>
+            </section>
+            <section>
             <h2 id="muerte">Muerte</h2>
             <p>En la Navidad de 1923, Kafka contrajo una pulmonía que le obligó a regresar al hogar paterno en Praga en
                 marzo de 1924. Al agravarse la enfermedad, ingresó en el sanatorio de Wiener Wald, cerca de Viena, donde
@@ -103,6 +110,27 @@
                 Segunda Guerra Mundial, su obra se volvió mundialmente reconocida. La lápida de su tumba fue diseñada
                 por el arquitecto Leopold Ehrmann.
             </p>
+        </section>
+        <section>
+        <h2 id="discusion">Discusión</h2>
+        <form id="form-discusion">
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" autocomplete="off">
+            </div>
+            <div>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario"></textarea>
+            </div>
+            <!-- Contador de caracteres y párrafo de avisos/errores -->
+            <p id="contador-caracteres">0/200</p>
+            <p id="aviso-form"></p>
+            
+            <button type="submit">Enviar</button>
+        </form>
+        <!-- Lista vacía donde se agregarán los comentarios dinámicamente -->
+        <ul id="lista-comentarios"></ul>
+    </section>
         </main>
         <footer class="d">
             <a href="tema2.html">La metamorfosis</a>

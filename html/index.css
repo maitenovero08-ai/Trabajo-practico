@@ -105,8 +105,6 @@ body.oscuro {
     font-size: 20px;
 }
 
-
-/* Clase para resaltar el botón activo de tamaño */
 .boton-activo {
     font-weight: bold;
     border: 2px solid #000;
