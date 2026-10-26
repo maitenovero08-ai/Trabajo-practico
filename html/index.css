@@ -3,7 +3,6 @@ body{
     color: rgb(59, 59, 59);
     padding: 0;
     margin: 0;
-    ba
 }
 .contenedor{
     display: grid;
@@ -84,4 +83,31 @@ aside > ul{
 }
 footer{
 font-family: sans-serif;
+}
+
+body.oscuro {
+    background-color: #1D2A31;
+    color: #EEE;
+}
+
+
+.texto-pequeno {
+    font-size: 14px;
+}
+
+
+.texto-estandar {
+    font-size: 16px;
+}
+
+
+.texto-grande {
+    font-size: 20px;
+}
+
+
+/* Clase para resaltar el botón activo de tamaño */
+.boton-activo {
+    font-weight: bold;
+    border: 2px solid #000;
 }
