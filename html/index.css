@@ -109,3 +109,9 @@ body.oscuro {
     font-weight: bold;
     border: 2px solid #000;
 }
+main section.plegada > *:not(h2) {
+    display: none;
+}
+main section h2 {
+    cursor: pointer;
+}
