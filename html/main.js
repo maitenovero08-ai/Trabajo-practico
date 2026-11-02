@@ -6,8 +6,8 @@ subtitulos.forEach((subtitulo) => {
     const a = document.createElement('a');
     a.href = `#${subtitulo.id}`;
     a.textContent = subtitulo.textContent;
-    li.appendChild(a);
-    listaIndice.appendChild(li);
+    li.append(a);
+    listaIndice.append(li);
 });
 
 const botonModo = document.querySelector('#modo-oscuro')
@@ -26,9 +26,11 @@ const btnPequeno = document.querySelector('#btn-pequeno')
 const btnEstandar = document.querySelector('#btn-estandar')
 const btnGrande = document.querySelector('#btn-grande')
 const articulo = document.querySelector('main')
+
 function limpiarTamanios() {
     articulo.classList.remove('texto-pequeno', 'texto-estandar', 'texto-grande');
 }
+
 if (btnPequeno && btnEstandar && btnGrande) {
     btnPequeno.addEventListener('click', function () {
         limpiarTamanios();
@@ -43,6 +45,7 @@ if (btnPequeno && btnEstandar && btnGrande) {
         articulo.classList.add('texto-grande');
     });
 }
+
 const secciones = document.querySelectorAll('main section');
 secciones.forEach((seccion) => {
     const h2 = seccion.querySelector('h2');
@@ -111,10 +114,10 @@ if (formDiscusion) {
                 li.remove();
             });
 
-            li.appendChild(strong);
-            li.appendChild(span);
-            li.appendChild(btnBorrar);
-            listaComentarios.appendChild(li);
+            li.append(strong);
+            li.append(span);
+            li.append(btnBorrar);
+            listaComentarios.append(li);
             
             formDiscusion.reset();
             if (contadorCaracteres) {

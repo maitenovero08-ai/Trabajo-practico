@@ -115,3 +115,87 @@ main section.plegada > *:not(h2) {
 main section h2 {
     cursor: pointer;
 }
+main section h2 {
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main section h2::after {
+    content: "▲";
+    font-size: 0.7em;
+    color: inherit;
+    margin-left: 10px;
+}
+main section.plegada h2::after {
+    content: "▼";
+}
+#panel-apariencia {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #ccc;
+}
+#panel-apariencia button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+#panel-apariencia button:hover {
+    background-color: #e0e0e0;
+    border-color: #888;
+}
+#panel-apariencia button:active {
+    transform: scale(0.98);
+}
+#botones-tamanios {
+    display: flex;
+    gap: 4px;
+}
+#botones-tamanios button {
+    flex: 1;
+}
+#botones-tamanios button.boton-activo,
+#panel-apariencia button.boton-activo {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    font-weight: bold;
+}
+#lista-comentarios {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+#lista-comentarios li {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid #ddd;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+#lista-comentarios button {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+#lista-comentarios button:hover {
+    background-color: #c9302c;
+}
