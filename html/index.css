@@ -89,7 +89,27 @@ body.oscuro {
     background-color: #1D2A31;
     color: #EEE;
 }
-
+body.oscuro .a {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+body.oscuro .d {
+    background-color: #1f1f1f;
+}
+body.oscuro .d a {
+    color: #b0c4de;
+}
+body.oscuro .d a:hover {
+    color: #ffffff;
+}
+body.oscuro .b a, 
+body.oscuro nav a {
+    color: #b0c4de;
+}
+body.oscuro .b a:hover, 
+body.oscuro nav a:hover {
+    color: #ffffff;
+}
 
 .texto-pequeno {
     font-size: 14px;
@@ -105,15 +125,8 @@ body.oscuro {
     font-size: 20px;
 }
 
-.boton-activo {
-    font-weight: bold;
-    border: 2px solid #000;
-}
 main section.plegada > *:not(h2) {
     display: none;
-}
-main section h2 {
-    cursor: pointer;
 }
 main section h2 {
     cursor: pointer;
@@ -198,4 +211,9 @@ main section.plegada h2::after {
 }
 #lista-comentarios button:hover {
     background-color: #c9302c;
+}
+.campo-error {
+    border: 2px solid #e74c3c !important;
+    background-color: #fdf2f2;
+    color: #333;
 }
